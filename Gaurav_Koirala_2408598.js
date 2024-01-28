@@ -117,5 +117,9 @@ async function searchData(inputCity) {
   }
 }
 btn.addEventListener("click", () => {
+  if (searchValue.value==''){
+    alert("Please Enter a city)
+  }else{
   searchData(searchValue.value);
+  }
 });
