@@ -116,10 +116,12 @@ async function searchData(inputCity) {
     document.querySelector(".hide").style.display = "block";
   }
 }
-btn.addEventListener("click", () => {
+btn.addEventListener("keypress", (event) => {
+  if(event.key=="Enter"){
   if(searchValue.value==""){
     alert("Enter a city")
     document.querySelector(".hide").style.display = "none"; 
+  }
   }
   searchData(searchValue.value);
 });
