@@ -136,6 +136,3 @@ searchValue.addEventListener("keypress", (event) => {
     event.preventDefault(); // Prevents the default action of the Enter key
   }
 });
-
-  searchData(searchValue.value);
-});
