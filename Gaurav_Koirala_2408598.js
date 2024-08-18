@@ -121,6 +121,21 @@ btn.addEventListener("click", () => {
     alert("Enter a city")
     document.querySelector(".hide").style.display = "none"; 
   }
+
+  searchData(searchValue.value);
+});
+searchValue.addEventListener("keypress", (event) => {
+  if (event.key === "Enter") {
+
+    if (searchValue.value === "") {
+      alert("Enter a city");
+      document.querySelector(".hide").style.display = "none"; 
+    } else {
+      searchData(searchValue.value);
+    }
+    event.preventDefault(); // Prevents the default action of the Enter key
   }
+});
+
   searchData(searchValue.value);
 });
