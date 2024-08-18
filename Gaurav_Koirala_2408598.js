@@ -116,7 +116,7 @@ async function searchData(inputCity) {
     document.querySelector(".hide").style.display = "block";
   }
 }
-btn.addEventListener("keypress", (event) => {
+btn.addEventListener("click", () => {
   if(searchValue.value==""){
     alert("Enter a city")
     document.querySelector(".hide").style.display = "none"; 
